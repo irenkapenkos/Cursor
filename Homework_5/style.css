@@ -30,7 +30,7 @@ td>.arrow-down{
     display: inline-block;
 }
 .round_corner{
-    width: 60%;
+    width: 45%;
     border: 0.5px solid#676969 ;
     border-radius: 4px;
     margin-top: 100px;
@@ -62,7 +62,7 @@ td>.arrow-down{
     color: #fffffc;
 }
 .second{
-    width: 50%;
+    width: 40%;
     vertical-align: middle;
     padding-left: 1.5em;
 }
