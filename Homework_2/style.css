@@ -1,0 +1,48 @@
+body{
+   margin: 0; 
+   padding-left: 30px;
+   padding-right: 30px;
+   
+}
+header{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+h1{
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+
+}
+figure{
+    margin: 0;
+}
+img{
+    width: 500px;
+    height: 250px;
+}
+figcaption{
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: rgb(66, 211, 180);
+
+}
+h2{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0; 
+}
+div>p.container{
+    margin: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* обнулення всіх налаштувань за замовчуванням */
+
+body{
+    background-color:#E5E5E5;
+    width: 1448px;
+    height: 1430px;
+    left: 1109px;
+    right: 5224px;
+}
+/* 1 банер */
+.ban_1{
+    margin-left: 40px;
+    background-color: #0B2239;
+    margin-top: 228px;
+    margin-bottom: 24px;
+    width: 1440px;
+    height: 72px;
+    display: flex;
+    justify-content:space-evenly;
+}
+div.ban_1>div.pg>p {
+    color: #FFFFFF;
+    width: 922px;
+    height: 40px;
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 16px;
+    line-height: 20px;
+}
+div.ban_1>.container{
+    display: flex;
+    align-items: center;
+}
+div.ban_1>div.container>button{
+    cursor:pointer;
+    background:  rgba(11, 34, 57, 1);
+    border: none; 
+}
+div.ban_1>div.container>button>a{
+    background:  rgba(11, 34, 57, 1);
+    color:#4AD295;
+    margin-right: 30px;
+    width: 130px;
+    height: 30px;
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter;
+    text-align: center;
+}
+div.ban_1>div.container>.btn1{
+    width: 130px;
+    height: 36px;
+    background-color: #4AD295;
+    margin-right: 120px;
+    text-align: center;
+}
+
+div.ban_1>div.container>div.btn1>button{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #4AD295;
+    border: none;
+}
+/* 2 банер */
+div.ban_2{
+    margin-left: 40px;
+    background-color: #2B2627;
+    width: 1440px;
+    height: 52px;
+}
+div.ban_2>.box{
+    padding-top: 15px;
+    display: flex;
+   justify-content: center;
+}
+
+div.ban_2>div.box>i{
+    color: #FFFFFF;
+}
+div.ban_2>div.box>p{
+    font-family: Inter;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* 3 банер */
+.ban_3{
+height: 62px;
+width: 560px ;
+border-radius: 15px 15px;
+background-color: #FFFFFF;
+margin-left: 40px;
+margin-top: 40px;
+padding-top: 10px;
+display: flex;
+justify-content: space-evenly;
+}
+div.ban_3>div.inner>p>span.color_text{
+    color: #EA4C89;
+} 
+
+div.ban_3>div.inner{
+    width: 450px;
+   display: flex;
+}
+div.ban_3>div.inner>img{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(234, 76, 137, 0.1);
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 16px;
+    margin-top: 8px;
+    max-width: 100%;
+    display: block; 
+}
+div.ban_3>div.inner>p{
+    width: 347px;
+    height: 40px;
+    margin-left: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* 4 банер */
+.ban_4{
+    background-color: #26262B;
+    height: 62px;
+    width: 560px ;
+    border-radius: 15px 15px;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.ban_4>div.prg>p{
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 40px;
+    width: 450px;
+    margin-left: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 20px;
+}
+div.ban_4>div.prg{
+    margin-top: 10px;
+}
+div.ban_4>div.btn3{
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    height: 28px;
+    width: 49px;
+    border-radius: 8px;
+    text-align: center;
+}
+div.ban_4>div.btn3>button{
+    cursor:pointer;
+    border: none;
+    background-color: #FFFFFF;
+    margin-top: 3px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+/* обгортка для 5і 6 банера */
+div.wrapper{
+    margin-left: -300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.wrapper>div.ban_5{
+    margin-top:  40px;
+    border-radius: 6px;
+    height: 206px;
+    width: 360px;
+}
+div.ban_5>.wrap{
+    height: 80px;
+    width: 312px;
+    padding-top: 10px;
+    margin-left:24px;
+    margin-right:10px;
+    font-size: 14px;
+    color:  #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 20px;
+}
+div.ban_5>div.wrap>h1{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color:  #FFFFFF;
+}
+div.ban_5>.lower{
+    padding-top: 30px;
+    color:  #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 14px;  
+}
+div.wrapper>div.ban_5>div.lower>.col{
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-color: rgba(28, 37, 64, 0.95);    
+    color: #FFFFFF;
+    border: none;
+    cursor:pointer;
+}
+div.ban_5>div.lower>button.btn4{
+    padding-top: 2px;
+    width: 85px;
+    height: 32px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-color: #09B3AF;
+    border: none;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+.ban_6{
+    margin-top:  40px;
+    padding-top: 20px;
+    border-radius: 16px;
+    height: 170px;
+    width: 360px;
+    background-color:#FFFFFF;
+}
+
+div.ban_6>div.wrap>h1{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+div.ban_6>div.wrap>p{
+    height: 60px;
+    width: 328px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(104, 127, 140, 1);
+}
+div.ban_6>.lower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+}
+div.ban_6>div.lower> button.btn5{
+    border: none;
+    color: #FFFFFF;
+    padding-top: 2px;
+    width: 160px;
+    height: 32px;
+    background-color: rgba(64, 193, 167, 1);
+   border-radius: 6px;
+   font-family: 'Roboto';
+   font-weight: 400;
+   cursor:pointer;
+
+}
+div.ban_6>div.lower> button.col{
+    border: none;
+    text-align: center;
+    background-color: #EAF0F4;
+    color: rgba(104, 127, 140, 1);
+    padding-top: 2px;
+    width: 160px;
+    height: 32px; 
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    cursor:pointer;
+}
+/* обгортка для 7 і 8 банера */
+div.col_m{      
+    margin-top: 40px;
+    margin-left: -300px;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.ban_7{
+    width: 320px;
+    height: 260px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+div.col_m>div.ban_7>h2{
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 28px;
+    color:#15295A;
+    text-align: center;
+    font-weight: 900;
+    font-family:'Roboto' ;
+}
+div.col_m>div.ban_7>p{
+    text-align: center;
+    width: 250px;
+    height: 72px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:'Inter';
+}
+div.col_m>div.ban_7>button.btn7{
+    margin-left: 100px;
+    width: 120px;
+    height: 44px;
+    border-radius: 43px;
+    background-color: #4A7EFF;
+    color: white;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;  margin-top: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+div.col_m>div.ban_8{
+    width: 320px;
+    height: 140px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+div.col_m>div.ban_8>p{
+    margin: 16px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;   
+}
+div.col_m>div.ban_8>.footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+div.col_m>div.ban_8>div.footer>button.btn8left{
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-left: -30px;
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #6666FF;
+    margin-left: 16px;
+    border: none;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    cursor:pointer;
+}
+div.col_m>div.ban_8>div.footer>button.btn8right{
+    background-color: rgba(102, 102, 255, 1);
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    border: none;
+    width: 95px;
+    height: 33px; 
+    cursor:pointer;
+}

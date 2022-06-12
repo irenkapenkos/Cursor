@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework_1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main1"><a href="https://git-scm.com/docs">Шпаргалка за командами гіта</a></h1>
+    <div class="container">
+      <h3 class="main">Setup and Config</h3>
+      <ul>
+        <li><b>git config</b> - Get and set repository or global options</li>
+        <p>You can query/set/replace/unset options with this command. The name is actually the section and the key separated by a dot, and the value will be escaped. You should registrate useremail and username to exit in Git</p>
+        <p>git config --global user.name blabla
+        git config --global user.email blabal@bla </p>
+        <p>Перше, що вам слід зробити після встановлення Git — вказати ваше ім'я та адресу електронної пошти. Це важливо, тому що кожен коміт у Git містить цю інформацію, і вона включена в коміти, що передаються вами, і не може бути далі змінено. Знову ж таки, якщо
+            вказано опцію --global, то ці налаштування достатньо зробити лише один раз, оскільки в цьому випадку Git використовуватиме ці дані для всього, що ви робите в цій системі.</p>
+      </ul>
+    </div>
+    <div class="container">
+      <h3 class="main">Getting and Creating Projects</h3>
+      <ul>
+        <li>
+          <b>git-init</b> - Create an empty Git repository or reinitialize an
+          existing one
+        </li>
+        <p>
+          This command creates an empty Git repository - basically a .git
+          directory with subdirectories for objects, refs/heads, refs/tags, and
+          template files. An initial branch without any commits will be created
+          (see +the --initial-branch option below for its name).
+        </p>
+        <li><b>git-clone</b> - Clone a repository into a new directory</li>
+        <p>
+          Clones a repository into a newly created directory, creates
+          remote-tracking branches for each branch in the cloned repository
+          (visible using git branch --remotes), and creates and checks out an
+          initial branch that is forked from the cloned repository’s currently
+          active branch.
+        </p>
+      </ul>
+    </div>
+    <div class="container">
+      <h3 class="main">Basic Snapshotting</h3>
+      <ul>
+        <li><b>git-add</b> - Add file contents to the index</li>
+        <p>
+          This command updates the index using the current content found in the
+          working tree, to prepare the content staged for the next commit. It
+          typically adds the current content of existing paths as a whole, but
+          with some options it can also be used to add content with only part of
+          the changes made to the working tree files applied, or remove paths
+          that do not exist in the working tree anymore.
+        </p>
+        <li><b>git-status</b>- Show the working tree status</li>
+        <p>
+          Displays paths that have differences between the index file and the
+          current HEAD commit, paths that have differences between the working
+          tree and the index file, and paths in the working tree that are not
+          tracked by Git (and are not ignored by gitignore[5]). The first are
+          what you would commit by running git commit; the second and third are
+          what you could commit by running git add before running git commit.
+        </p>
+        <li><b>git-commit</b> - Record changes to the repository</li>
+        <p>
+          Create a new commit containing the current contents of the index and
+          the given log message describing the changes. The new commit is a
+          direct child of HEAD, usually the tip of the current branch, and the
+          branch is updated to point to it (unless no branch is associated with
+          the working tree, in which case HEAD is "detached" as described in
+          <a href="#check">git-checkout</a>).
+        </p>
+        <p>
+          If you make a commit and then find a mistake immediately after that,
+          you can recover from it with git reset.
+        </p>
+      </ul>
+    </div>
+    <div class="container">
+        <h3 class="main">Branching and Merging</h3>
+            <ul>
+                <li><b>git-branch</b> - List, create, or delete branches</li>
+                <p>If --list is given, or if there are no non-option arguments, existing branches are listed; the current branch will be highlighted in green and marked with an asterisk. Any branches checked out in linked worktrees will be highlighted in cyan and marked with a plus sign. Option -r causes the remote-tracking branches to be listed, and option -a shows both local and remote branches.</p>
+                <li id="check"><b>git-checkout</b> - Switch branches or restore working tree files</li>
+                <p>Updates files in the working tree to match the version in the index or the specified tree. If no pathspec was given, git checkout will also update HEAD to set the specified branch as the current branch.</p>
+                <li><b>git-log </b>- Show commit logs</li>
+                <p>Shows the commit logs.</p>
+                <li><b>git-merge</b> - Join two or more development histories together</li>
+                <p>Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.</p>
+            </ul>
+    </div>
+    <div class="container">
+        <h3 class="main">Sharing and Updating Projects</h3>
+            <ul>
+                <li><b>git-pull</b> - Fetch from and integrate with another repository or a local branch</li>
+                <p>Incorporates changes from a remote repository into the current branch. If the current branch is behind the remote, then by default it will fast-forward the current branch to match the remote. If the current branch and the remote have diverged, the user needs to specify how to reconcile the divergent branches with --rebase or --no-rebase (or the corresponding configuration option in pull.rebase).</p>
+                <li><b>git-push</b> - Update remote refs along with associated objects</li>
+                <p>Updates remote refs using local refs, while sending objects necessary to complete the given refs.</p>
+            </ul>
+    </div>
+    <br>
+    <h2>Advanced</h2>
+    <div>
+        <ul>
+            <li>git-revert - Повернути деякі існуючі коміти</li>
+            <p>Враховуючи один або кілька існуючих комітів, поверніть зміни, внесені відповідними патчами, і запишіть нові коміти, які їх записують. Це вимагає, щоб ваше робоче дерево було чистим (без змін з коміту HEAD).</p>
+            <li>git-rebase - повторно застосувати коміти поверх іншої базової підказки</li>
+            <p>Якщо вказано <branch>, git rebase виконає автоматичне git switch <branch>виконання перед будь-яким іншим. В іншому випадку він залишається на поточній гілці.</p>
+            <li>git-reset - Скидання поточного HEAD до вказаного стану</li>
+            <p>У перших трьох формах скопіюйте записи з <tree-ish>до індексу. В останній формі встановіть поточну заголовок гілки ( HEAD) <commit>, за бажанням змінюючи індекс і робоче дерево, щоб вони відповідали. Значення <tree-ish>/ <commit>за замовчуванням HEADу всіх формах.</p>
+            <li>git-cherry-pick - Застосувати зміни, внесені деякими існуючими комітами</li>
+            <p>Враховуючи один або кілька існуючих комітів, застосуйте зміни, які вносить кожен із них, записуючи новий комміт для кожного. Це вимагає, щоб ваше робоче дерево було чистим (без змін з коміту HEAD).</p>
+            <li>git-stash - зберігає зміни в брудному робочому каталозі</li>
+            <p>Використовуйте git stash, коли ви хочете записати поточний стан робочого каталогу та індексу, але хочете повернутися до чистого робочого каталогу. Команда зберігає ваші локальні модифікації та повертає робочий каталог відповідно до HEADкоміту.</p>
+        </ul>
+    </div>
+    <br>
+  </body>
+</html>

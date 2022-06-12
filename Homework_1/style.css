@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    background-color: rgb(184, 228, 184);
+}
+.main1{
+font-size: 25px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+font-size: 20px;
+margin-top: 10px;
+border-bottom: 5px solid rgb(111, 182, 111);
+justify-content: center;
+align-items: center;
+}
+.main{
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+a {
+    color: black;
+}
