@@ -1,5 +1,4 @@
 body{
-    width: 1600px;
     display: flex;
     justify-content: center;
 }
@@ -12,6 +11,7 @@ body{
     width: 90%;
     height: 754px;
     margin-top: 50px;
+    margin-bottom: 100px;
     margin-left: 240px;
 }
 section.block_1>nav{
@@ -102,8 +102,7 @@ div.left>button{
     cursor: pointer;
 }
 .block_2{
-    margin-top: 99px;
-    margin-left: 240px;
+    margin: 0 auto;
     width: 1117px;
     height: 560px;
     background-color: rgba(240, 99, 184, 0.15);
