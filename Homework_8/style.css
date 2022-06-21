@@ -36,10 +36,10 @@
     margin: 35px 0;
 }
 .btn::before{
-    left: 230px;
+    left: 270px;
 }
 .btn::after{
-    right: 230px;
+    right: 270px;
 }
 button{
  font-size: 24px;
