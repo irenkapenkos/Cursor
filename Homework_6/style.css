@@ -373,7 +373,8 @@ section.block_5>.footer{
 
 
 section.block_5>div.footer>.cell_1{
-  display: inline-flex;
+  display: flex; 
+  justify-content: space-evenly;
 }
 section.block_5>div.footer>div.cell_1>h2{
     font-family: 'Sen',sans-serif;
