@@ -391,52 +391,59 @@ span{
 
 @media only screen  and (max-width: 720px) {
     header{
-        width: 720px;
+        width: 360px;
         height: 500px;
         background-image: none !important;
+        padding: 0 20px;
         
     }
     .main_info{
         background-color: rgba(244, 246, 249, 1);
-       padding:  0 100px;
+       padding: 0;
     }
-
     .logo_header{
-       text-align: center;
+       margin-left: 100px;
     }
-    .main_info>p,
-    .main_info>h1{
+    .main_info>p{
         text-align: center;
     }
     .main_info>h1{
+        width: 9em;
         margin-top: 2em;
+        text-align: center;
     }
     .main_info>p{
         width: 17em;
         display: block;
-        margin: auto;
-    }
-    .wrap_download{
-        margin: 50px auto;
-    }
-    
+    } 
   .section_about_app{
    flex-flow: column-reverse;
-   height: 120vh;
-   width:max-content;
-
+   height: 100vh;
   }
   .describe_about-app{
     text-align: center;
     width: 100%;
-    margin: 0 100px;
-    padding-top: 5em;
-   
+    height: 450px; 
+    padding: 0;
+
   }
   .about-match{
     width: 100%;
     background-size: cover;
-    padding: 50px;
+    padding: 0;
+  }
+  .friendly_match{
+    margin-left: -53px;
+    width: 350px;
+  }
+  .video-match{
+    width: 250px;
+    padding-left: 8em;
+    padding-top: 8.5em;
+  }
+  .describe_about-app>h3{
+    
+    margin:10px 0 0 0 ;
   }
   .describe_about-app>h2,
   .describe_about-app>h3{
@@ -444,36 +451,35 @@ span{
   }
   .about_app{
     text-align: center;
-    margin:0 auto;
-    bottom: 10px;
+    margin: 0 auto 30px;  
   }
-  .container_get{
-    width: max-content;
-    padding: 0 160px;
+  .about_app>p{
+   width: 90%;
   }
   .get_start{
     flex-flow: column;
-    padding:0 56px;
-    background-size: 77em;
-    background-position: 88%;
-    background-position-y: 343px;
-
+    background-size: 65em;
+    background-position: 82%;
+    background-position-y: 329px;
+    padding: 0;
   }
   .text_left_start{
-    margin: 50px 0;
+    margin: 20px 0;
     text-align: center;
   }
   .text_left_start>h2,
   .text_left_start>h3{
     text-align: center;
   }
+
  .container_features{
     height: 1775px;
     background-image: none;
     min-width: 360px;
     display: flex;
     flex-direction: column;
-    padding: 0 230px;
+    padding: 0;
+    margin: 0;
  }
  .header_features{
     color: #333333;
@@ -499,27 +505,44 @@ span{
     fill: rgba(0, 173, 238, 1);
  }
  .container-user_say{
-    min-width: 770px;
+    min-width: 360px;
+ }
+ .first_user,
+ .second_user,
+ .four_user,
+ .five_user{
+    display: none;
  }
  section.trademark-features{
-   min-width: 880px;
+   min-width: 360px;
  }
  .trademark-grid{
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 3.1em;
  }
+ .header-featured_in{
+    margin-bottom: 1em;
+ }
  section.get_up{
-    min-width: 770px;
-    height: 600px;
+    min-width: 360px;
+    height: 50em;
     display: flex;
     flex-direction: column-reverse;
  }
  .get_up_right-side{
-    width: 70%;
-    height: 300px;
+    width: 90%;
+    height: 30em;
     margin-top: 0;
-    padding-left: 7em;
+    
+ }
+ .get_up_right-side>h2{
+    margin-top: 10px;
+ }
+ .about_app_last{
+    margin-left: 10px;
+  width: 100%;
  }
  .get_up_right-side>p,
  .get_up_right-side>h2{
@@ -537,7 +560,7 @@ span{
  footer{
     display: flex;
     flex-direction: column;
-    min-width: 770px;
+   
  }
  .logo_footer{
     padding: 0;
