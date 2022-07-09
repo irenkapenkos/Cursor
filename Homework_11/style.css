@@ -112,4 +112,10 @@ a{
     .main_info{
         margin: 1em;
     }
+    .wrap-name{
+        padding: 0;
+    }
+    .medium{
+        margin: 0!important;
+    }
 }
