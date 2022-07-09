@@ -102,3 +102,14 @@ a{
    flex-wrap: wrap;
    
 }
+@media screen and (max-width: 720px){
+    .group{
+        display: none;
+    }
+    .box{
+       flex-direction: column;
+    }
+    .main_info{
+        margin: 1em;
+    }
+}
