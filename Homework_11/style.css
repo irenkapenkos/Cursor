@@ -1,0 +1,104 @@
+*{
+    font-family: Helvetica,  Arial,  sans-serif;
+}
+.group{
+    position: relative;
+}
+.search{
+    top: 40%;
+    left: 24%;
+    position: absolute;
+    cursor: pointer;
+}
+form{
+    border: none;
+}
+input{
+    padding: 6px 12px;
+}
+input:focus{
+    background-color: rgba(12, 231, 220, 0.836);
+}
+.linear_in{ 
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+}
+.icon{
+    margin-left: 1em;
+}
+.h_effect{
+    cursor: pointer;
+}
+.h_effect:hover{
+    fill: #4A90E2;
+}
+.unread_messages{
+    background: rgba(220, 86, 91, 1);
+    color: #ffffff;
+}
+.navigator{
+   margin: 0;
+   background: rgba(219, 219, 219,);
+   height: 0.5em;
+}
+.btn-fl{
+    --bs-btn-padding-x: 1.8rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+.btn-primary{
+    --bs-btn-disabled-bg: #0d6efd;
+    background-color: var(--bs-btn-disabled-bg);
+    opacity: var(--bs-btn-disabled-opacity);
+}
+.user{ 
+    font-size: 26px;
+    font-weight: 500;
+}
+svg:nth-child(1n+1){
+    cursor: pointer;
+}
+.about_user{
+    font-size: 17px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #133768;
+}
+.border-svg{
+ border: 2.5px solid #DBDBDB;
+ border-radius: 50%;
+ margin: 0.5em;
+ padding: 0.1em;
+}
+.wrap-name{
+    padding-left: 10%;
+}
+.user-story{
+    font-size: 14px;
+    font-weight: 700;
+}
+.before-post{
+    background:rgba(219, 219, 219,0);
+    height: 0.5em;
+    margin-bottom: 0;
+    width: 100%;
+}
+.b-foto-t{
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(143, 143, 143, 1);
+
+}
+.b-foto{
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: 700;
+}
+.foto-card{
+   display: flex;
+   flex-wrap: wrap;
+   
+}
