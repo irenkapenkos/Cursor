@@ -1,6 +1,12 @@
 *{
     font-family: Helvetica,  Arial,  sans-serif;
 }
+.logo-insta{
+   padding-left: 3em;
+}
+.social{
+    padding-right: 3em;
+}
 .group{
     position: relative;
 }
@@ -41,6 +47,9 @@ input:focus{
    background: rgba(219, 219, 219,);
    height: 0.5em;
 }
+.avatar{
+    padding-right: 4em;
+}
 .btn-fl{
     --bs-btn-padding-x: 1.8rem;
     font-size: 14px;
@@ -62,6 +71,9 @@ svg:nth-child(1n+1){
     font-size: 17px;
     font-weight: 500;
 }
+.follow{
+    cursor: pointer;
+}
 a{
     text-decoration: none;
     color: #133768;
@@ -73,24 +85,35 @@ a{
  padding: 0.1em;
 }
 .wrap-name{
-    padding-left: 10%;
+    padding-left: 18%;
 }
 .user-story{
     font-size: 14px;
     font-weight: 700;
 }
 .before-post{
-    background:rgba(219, 219, 219,0);
+    background-color:rgba(219, 219, 219,0);
     height: 0.5em;
     margin-bottom: 0;
     width: 100%;
+    position: relative;
 }
+.jumper{
+    position: absolute;
+    margin-top:2.23em;
+    margin-left: -7em;
+    cursor: pointer;
+}
+
 .b-foto-t{
     font-family: 'Helvetica';
     font-size: 12px;
     font-weight: 700;
     color: rgba(143, 143, 143, 1);
-
+}
+.posts,
+.tagget{
+    cursor: pointer;
 }
 .b-foto{
     font-family: 'Helvetica';
