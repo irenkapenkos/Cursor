@@ -424,7 +424,6 @@ button {
 .reviews {
     position: relative;
 }
-
 .reviews .arrow-left, .reviews .arrow-right {
     position: absolute;
     top: 50%;
@@ -592,4 +591,16 @@ footer {
     margin-top: 100px;
     background-color: #333;
     height: 50px;
+}
+#preloader{
+    background: rgb(243, 242, 242, 1) url(../img/preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.slide{
+    width: 100%;
+    padding: 20px 60px;
 }

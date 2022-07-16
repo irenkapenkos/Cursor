@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/screen.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="preloader"></div>
     <header>
       <div class="wrapper">
         <img src="img/logo.webp" alt="Logo Avtoparktronik" class="logo" />
@@ -170,7 +174,11 @@
         <div class="left-block">
           <p>ремонт бампера стоит от</p>
           <p class="cost"><span class="yellow">6000</span> рублей</p>
-          <img src="img/girl-in-car.webp" alt="girl-in-car" class="full-width" />
+          <img
+            src="img/girl-in-car.webp"
+            alt="girl-in-car"
+            class="full-width"
+          />
           <img
             src="img/broken-car1.webp"
             alt="first-broken-car"
@@ -201,11 +209,11 @@
         <h2 class="h2">
           отзывы о нашем <span class="yellow">видеопарктронике</span>
         </h2>
-        <img src="img/arrow-left.png" alt="arrow-left" class="arrow-left" />
-        <div class="review-slider">
+        <!-- <img src="img/arrow-left.png" alt="arrow-left" class="arrow-left" /> -->
+        <div class="review-slider slick-slider">
           <div class="slide">
             <img
-              src="img/review1.jpg"
+              src="img/review1.webp"
               alt="photo-reviewer-car"
               class="main-review-img"
             />
@@ -230,8 +238,60 @@
               /><b>Константин</b><i>г. Днепропетровск</i>
             </div>
           </div>
+          <div class="slide">
+            <img
+              src="img/review1.webp"
+              alt="photo-reviewer-car"
+              class="main-review-img"
+            />
+            <p class="review-text">
+              Опять долгие ночи в интернете в поисках обзоров и сравнений…
+              Проблема таких устройств что у них либо дизайн уродский огромный — в
+              полтора раза больше штатного, а я вообще не люблю заднее зеркало,
+              так как за 3 года вождения рабочих "каблучков" типа Кангу и Берлинго
+              вообще привык без него обходится, либо тех. данные никакие — камеры
+              очень плохого качества… Уже думал что печаль… :( Но вот за пару дней
+              поисков наткнулся на то о чем мечтал действительно — HD Recorder.
+              Нашел его у одного из драйвечан, и у других. Все в восторге от
+              данного устройства. Качество видео очень хорошее, в машине не видно
+              его вообще, крепления на штатное зеркало любой машины, вообщем то
+              что доктор прописал!
+            </p>
+            <div class="review-author">
+              <img src="img/review1-ava.jpg" alt="reviewer-photo" class="ava" /><b
+                >Константин</b
+              ><i>г. Днепропетровск</i>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <img
+              src="img/review1.webp"
+              alt="photo-reviewer-car"
+              class="main-review-img"
+            />
+            <p class="review-text">
+              Опять долгие ночи в интернете в поисках обзоров и сравнений…
+              Проблема таких устройств что у них либо дизайн уродский огромный — в
+              полтора раза больше штатного, а я вообще не люблю заднее зеркало,
+              так как за 3 года вождения рабочих "каблучков" типа Кангу и Берлинго
+              вообще привык без него обходится, либо тех. данные никакие — камеры
+              очень плохого качества… Уже думал что печаль… :( Но вот за пару дней
+              поисков наткнулся на то о чем мечтал действительно — HD Recorder.
+              Нашел его у одного из драйвечан, и у других. Все в восторге от
+              данного устройства. Качество видео очень хорошее, в машине не видно
+              его вообще, крепления на штатное зеркало любой машины, вообщем то
+              что доктор прописал!
+            </p>
+            <div class="review-author">
+              <img src="img/review1-ava.jpg" alt="reviewer-photo" class="ava" /><b
+                >Константин</b
+              ><i>г. Днепропетровск</i>
+            </div>
+          </div>
         </div>
-        <img src="img/arrow-right.png" alt="arrow-right" class="arrow-right" />
+
+        <!-- <img src="img/arrow-right.png" alt="arrow-right" class="arrow-right" /> -->
       </div>
     </section>
     <section class="delivery">
@@ -313,18 +373,18 @@
         </div>
         <div class="right-block">
           <form action="form-ok.php">
-             <input
+            <input
               type="text"
               name="name"
               class="name"
               placeholder="Введите имя"
-             />
-             <input
+            />
+            <input
               type="text"
               name="phone"
               class="phone"
               placeholder="+38 (___)"
-              />
+            />
             <div id="timer2"></div>
             <button class="btn-order centred">Заказать</button>
           </form>
@@ -377,5 +437,29 @@
         player.stopVideo();
       }
     </script>
-</body>
+
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <!-- jquery CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slisk slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script type="text/javascript">
+      $(".slick-slider").slick({
+        centerMode:true,
+        slidesToShow:1,
+        dots:true,
+        autoplay:true,
+        
+      });
+
+     </script>
+  
+  </body>
 </html>
