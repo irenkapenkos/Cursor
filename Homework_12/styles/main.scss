@@ -1,0 +1,218 @@
+$header-color:#091133;
+$color-link:#505F98;
+$font-xxs:12px;
+$font-xs:14px;
+$font-s:16px;
+$font-m:18px;
+$font-l:36px;
+$font-xl:50px;
+$bg-color:#F0F0F0;
+$btn-white:#FFFFFF;
+$btn-black:#111B47;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: 'Roboto';
+  $bg-color:#F0F0F0;
+}
+.cover-img{
+    margin-left: 50%;
+}
+.wrap-intro{
+    padding-left: 1em;
+}
+.page{
+    color: $color-link;
+    font-size:$font-xs;
+    font-weight: 400;
+   
+    &:hover{
+      text-decoration: underline;
+    }
+}
+.landie-logo{
+    margin-right: 1em;
+}
+.btn-nav{
+    background-color: $btn-black;
+    margin-right: 5em;
+
+    .btn-buy{
+        color: $btn-white;
+        font-size:$font-xxs;
+        font-weight: 500;
+        padding: 5px 60px;
+    }
+}
+
+.burger-menu{
+    display: none;
+}
+
+.introduction_contant{
+    padding: 16em 0;
+    z-index: 7;
+    
+    .headers{
+
+     color: $header-color;
+     font-weight: 500;
+     
+    }
+  
+}
+.parah_main{
+    margin-top: 1.5em;
+    padding-bottom: 4em;
+    width: 89%;
+    font-size: $font-m;
+    color: $color-link;
+    font-weight: 400;
+   line-height: 30px;
+}
+.parah_about{
+    margin-top: 1.5em;
+    padding-bottom: 4em;
+    width: 89%;
+    font-size: $font-s;
+    color: $color-link;
+    font-weight: 400;
+   line-height: 30px;
+}
+.first-h{
+    font-size: $font-xl;
+ }
+.wrapper-btn{
+   
+   .btn-learn-more{
+     background: none;
+     color: $btn-black;
+     border: 2px solid rgba(9, 17, 51, 1);
+     padding: 4px 50px;
+     font-size:$font-s;
+     font-weight: 500;
+   }
+}
+.btn-purchase{
+    border: none;
+    color: $btn-white;
+    background-color: $btn-black;
+    padding: 5px 40px;
+    font-size:$font-s;
+    font-weight: 500;
+  }
+.sub-h{
+    font-size:$font-l;
+}
+.mobile_login{
+    margin-top: 17em;
+    margin-bottom:8em;
+}
+.min-h{
+    font-size: $font-s;
+    color: $header-color;
+    font-weight: 500;
+}
+.min-parah{
+    color: #5D6970;
+    font-size: $font-xxs;
+    width: 70%;
+}
+.left-aside-image{
+    width: 40%;
+    margin-left: 5em;
+    margin-right: 11.5em;
+}
+.right-aside-content{
+    width: 40%;
+
+}
+.parah_about-last{
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+    width: 89%;
+    font-size: $font-s;
+    color: $color-link;
+    font-weight: 400;
+    line-height: 30px;
+}
+.row{
+    padding: 5em 0;
+}
+.box-for-three{
+    margin-bottom: 5em;
+}
+@mixin make-container($padding-x:3em, $padding-y:16em) {
+    width: 100%;
+    padding-left: $padding-x;
+    padding-right: $padding-x ;
+    padding-top: $padding-y;
+    padding-bottom: 8em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.custom-container{
+ @include make-container($padding-x:3em, $padding-y:16em)
+}
+.parah_about-prefooter{
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+    width: 40em;
+    font-size: $font-s;
+    color: $color-link;
+    font-weight: 400;
+    line-height: 30px;
+}
+.dollars{
+    font-size: $font-xl;
+    color: #222F65;
+    font-weight: 500;
+}
+.price{
+    background: url(../image/Rectangle.svg) no-repeat;
+    background-size: 100%;
+}
+.ui{
+    font-size: $font-s;
+    color: #37447E;
+    font-weight: 400;
+}
+.price-p{
+    font-size: $font-xs;
+    color: #5D6970;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+.prefooter{
+    background: rgba(231, 236, 255, 1);
+    height: 27.5vh;
+}
+.page-footer{
+    color: #929ECC;
+    font-size:$font-xs;
+    font-weight: 400;
+   
+    &:hover{
+      text-decoration: underline;
+    }
+}
+.wrap-upper{
+    padding-top: 60px;
+}
+.liner{
+    width: 77%;
+    height: 1px;
+    margin: 2.5em auto 1em;
+    background-color: rgba(205, 209, 212, 1);
+}
+.social-media{
+    margin-right: -6em;
+}
+.down-nav{
+    margin-left: -8.5em;
+
+}
